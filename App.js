@@ -51,7 +51,7 @@ class HomeScreen extends React.Component {
     var ds = new ListView.DataSource({
       rowHasChanged: (r1, r2) => r1 !== r2
     });
-    var initialMessages = [ { text: 'This is will messages will pop up.' }, { text: 'Hello! Welcome to the chatroom tutorial.' }];
+    var initialMessages = [ { text: 'This is where messages will pop up.' }, { text: 'Hello! Welcome to the chatroom tutorial.' }];
     this.state = {
       dataSource: ds.cloneWithRows(initialMessages),
       containerStyle: {
@@ -128,3 +128,5 @@ class HomeScreen extends React.Component {
     );
   }
 }
+
+export default HomeScreen;
